@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input,
+        select {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        
+        .form-box {
+            width: 500px;
+            height: auto;
+            border: 2px solid white;
+            padding: 20px;
+            margin: auto;
+            margin-top: 50px;
+            border-radius: 10px;
+        }
+        
+        .centre {
+            text-align: center;
+        }
+        
+        .btn {
+            background-color: white;
+            color: rgb(24, 141, 230);
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+            margin-left: 700px;
+        }
+    </style>
+</head>
+
+<body style="background-color: rgb(24, 141, 230); color: white;">
+    <div class="form-box">
+        <p>
+            <h3 style="text-align: left;  ">Registration Details</h3>
+        </p>
+        University:
+        <input type="text" placeholder="Enter University Name"><br><br> Instutution:
+        <input type="text" placeholder="Enter Instutution Name"><br><br> Branch:
+        <select name="branch" id="branch">
+        <option value="">--Select Branch--</option>
+        <option value="cse">Computer Science Engineering</option>
+        <option value="it">Information Technology</option>
+        <option value="mech">Mechanical Engineering</option>
+        <option value="civil">Civil Engineering</option>
+    </select><br><br> Degree:
+        <select name="degree" id="degree">
+        <option value="">--Select Degree--</option>
+        <option value="btech">B.Tech</option>
+        <option value="mtech">M.Tech</option>
+        <option value="bsc">B.Sc</option>
+        <input type="radio" > Pursuing <input type="radio"> Completed
+    </select><br><br> Average CPI:
+        <input type="number" id="cpi" name="cpi" min="0" max="100" />upto
+        <input type="number" id="cpi2" name="cpi2" min="0" max="100" />Th Semester<br><br> Experence:
+        <input type="number" placeholder="" min="0" max="70">Years<br><br> Your Website Or Blog:
+        <input type="text" placeholder="http://"><br><br>
+    </div>
+
+</body>
+<button class="btn" style="margin-left: 700px;">step2</button>
+
+</html>
