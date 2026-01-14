@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Facebook Signup</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        body {
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        
+        .signup-container {
+            background: #fff;
+            width: 430px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+        }
+        
+        .logo {
+            text-align: center;
+            color: #1877f2;
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        .title {
+            text-align: center;
+        }
+        
+        .title h2 {
+            font-size: 24px;
+        }
+        
+        .title p {
+            color: #606770;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+        
+        hr {
+            margin: 10px 0;
+            border: 1px solid #dddfe2;
+        }
+        
+        .name {
+            display: flex;
+            gap: 10px;
+        }
+        
+        input,
+        select {
+            width: 100%;
+            padding: 11px;
+            margin: 6px 0;
+            border-radius: 5px;
+            border: 1px solid #ccd0d5;
+            font-size: 14px;
+            background: #f5f6f7;
+        }
+        
+        label {
+            font-size: 12px;
+            color: #606770;
+            margin-top: 8px;
+            display: block;
+        }
+        
+        .dob {
+            display: flex;
+            gap: 10px;
+        }
+        
+        .gender {
+            display: flex;
+            gap: 10px;
+            margin-top: 6px;
+        }
+        
+        .gender div {
+            flex: 1;
+            border: 1px solid #ccd0d5;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 14px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #fff;
+        }
+        
+        .terms {
+            font-size: 11px;
+            color: #777;
+            margin-top: 10px;
+        }
+        
+        .signup-btn {
+            width: 60%;
+            margin: 15px auto;
+            display: block;
+            padding: 12px;
+            background: #42b72a;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        
+        .login-link {
+            text-align: center;
+            color: #1877f2;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+        
+        @media (max-width: 480px) {
+            .signup-container {
+                width: 95%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="signup-container">
+        <div class="logo">facebook</div>
+
+        <div class="title">
+            <h2>Create a new account</h2>
+            <p>It's quick and easy.</p>
+        </div>
+
+        <hr>
+
+        <form>
+            <div class="name">
+                <input type="text" placeholder="First name">
+                <input type="text" placeholder="Surname">
+            </div>
+
+            <label>Date of birth</label>
+            <div class="dob">
+                <select><option>1</option></select>
+                <select><option>Jan</option></select>
+                <select><option>2000</option></select>
+            </div>
+
+            <label>Gender</label>
+            <div class="gender">
+                <div>Female <input type="radio" name="gender"></div>
+                <div>Male <input type="radio" name="gender"></div>
+                <div>Custom <input type="radio" name="gender"></div>
+            </div>
+
+            <input type="text" placeholder="Mobile number or email address">
+            <input type="password" placeholder="New password">
+
+            <p class="terms">
+                By clicking Sign Up, you agree to our Terms, Privacy Policy and Cookies Policy.
+            </p>
+
+            <button class="signup-btn">Sign Up</button>
+
+            <div class="login-link">Already have an account?</div>
+        </form>
+    </div>
+
+</body>
+
+</html>
