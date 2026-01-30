@@ -1,0 +1,53 @@
+<html>
+
+<head>
+    <title>HTML/CSS Translator</title>
+</head>
+
+<body>
+
+    <form method="post">
+
+        <table width="100%" border="1" cellspacing="0" cellpadding="5">
+
+            <tr bgcolor="lightblue">
+                <th colspan="2">
+                    <h2>HTML/CSS Translator</h2>
+                </th>
+            </tr>
+
+            <tr bgcolor="lightblue">
+                <td colspan="2" align="center">
+                    <input type="submit" name="run" value="Run">
+                </td>
+            </tr>
+
+            <tr>
+                <td width="50%" valign="top">
+                    <textarea name="code" style="width:100%; height:450px;">
+<?php
+if(isset($_POST['run']))
+{
+    echo $_POST['code'];
+}
+?>
+</textarea>
+                </td>
+
+                <td width="50%" valign="top" bgcolor="white">
+                    <?php
+if(isset($_POST['run']))
+{
+    echo $_POST['code'];
+}
+?>
+                </td>
+            </tr>
+
+        </table>
+
+    </form>
+
+</body>
+
+</html>
